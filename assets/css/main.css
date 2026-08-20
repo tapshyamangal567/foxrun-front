@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap');
+
 /**
 
 * Template Name: unbooker
 
-
-
 */
-
-
 
 /*--------------------------------------------------------------
 
@@ -32,17 +30,45 @@
 
 :root {
 
- --background-color: #0b0b0b; /* Unified dark backdrop that mirrors the logo's black tone */
+  --bg-primary: #F6F1E3;
 
- --default-color: #f3f3f3; /* Light body text for high contrast on the dark background */
+  --bg-secondary: #FFFDFC;
 
- --heading-color: #ffffff; /* Crisp white headings to align with the logo perimeter */
+  --bg-surface: #FFFFFF;
 
- --accent-color: #ffb400; /* Brand yellow pulled from the logo for emphasis elements */
+  --bg-surface-soft: #F3EBDD;
 
- --surface-color: #131313; /* Card and panel background that lifts slightly from the page */
+  --accent: #F59E0B;
 
- --contrast-color: #0b0b0b; /* Dark copy for components set on the yellow accent */
+  --accent-soft: rgba(245, 158, 11, 0.10);
+
+  --text-primary: #111827;
+
+  --text-secondary: #64748B;
+
+  --border: #E7DCC7;
+
+  --shadow: 0 18px 48px rgba(17, 24, 39, 0.08);
+
+  --shadow-hover: 0 26px 70px rgba(17, 24, 39, 0.12);
+
+  /* Legacy mappings */
+
+  --bg-base: var(--bg-primary);
+
+  --bg-section: var(--bg-secondary);
+
+  --background-color: var(--bg-primary);
+
+  --default-color: var(--text-secondary);
+
+  --heading-color: var(--text-primary);
+
+  --accent-color: var(--accent);
+
+  --surface-color: var(--bg-surface);
+
+  --contrast-color: #111827;
 
 }
 
@@ -65,8 +91,6 @@
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
-
 
 .light-background {
 
@@ -302,8 +326,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
-
 /*--------------------------------------------------------------
 
 # Navigation Menu
@@ -522,8 +544,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
-
 /* Mobile Navigation */
 
 @media (max-width: 1199px) {
@@ -581,7 +601,6 @@ h1, h2, h3, h4, h5, h6 {
  z-index: 9998;
 
 }
-
 
 .navmenu a,  .navmenu a:focus {
 
@@ -1135,8 +1154,6 @@ margin-right: 6px;
 
 }
 
-
-
 /*--------------------------------------------------------------
 
 # Disable aos animation delay on mobile devices
@@ -1573,7 +1590,7 @@ color: rgba(255, 255, 255, 0.82);
 
 	animation-delay: -2s;
 
-	fill: #FFC91F;
+	fill: #F59E0B;
 
 }
 
@@ -1582,6 +1599,14 @@ color: rgba(255, 255, 255, 0.82);
  0% {
 
  transform: translate(85px, 0%);
+
+}
+
+ 100% {
+
+ transform: translate(-90px, 0%);
+
+}
 
 }
 
@@ -1597,14 +1622,6 @@ color: rgba(255, 255, 255, 0.82);
 		max-width: 100%;
 		height: auto;
 	}
-}
-
- 100% {
-
- transform: translate(-90px, 0%);
-
-}
-
 }
 
  @keyframes move-forever2 {
@@ -1655,8 +1672,6 @@ color: rgba(255, 255, 255, 0.82);
 
 }
 
-
-
 /*--------------------------------------------------------------
 
 # About Section
@@ -1667,7 +1682,7 @@ color: rgba(255, 255, 255, 0.82);
 
 	padding-top: 100px;
 
-	background:#FFC91F;
+	background:#F59E0B;
 
 	padding-bottom: 70px;
 
@@ -1795,7 +1810,7 @@ color: rgba(255, 255, 255, 0.82);
 
 	transition: all 0.4s ease-out 0s;
 
-	background-color: #FFC91F;
+	background-color: #F59E0B;
 
 	color: var(--accent-color);
 
@@ -2099,7 +2114,7 @@ color: rgba(255, 255, 255, 0.82);
 
 	text-align: center;
 
-	border: 3px solid #ccc;
+	border: 3px solid #E5E7EB;
 
 	padding: 40px;
 
@@ -2157,7 +2172,7 @@ color: rgba(255, 255, 255, 0.82);
 
 .testimonials .testimonial-item .stars i {
 
-	color: #ffc107;
+	color: #F59E0B;
 
 	margin: 0 1px;
 
@@ -2235,7 +2250,7 @@ color: rgba(255, 255, 255, 0.82);
 
 	height: 32px;
 
-	background-color: 
+	background-color:
 
 color-mix(in srgb, var(--default-color), transparent 50%);
 
@@ -2247,7 +2262,7 @@ color-mix(in srgb, var(--default-color), transparent 50%);
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
 
-	background-color: #FFC91F;
+	background-color: #F59E0B;
 
 	opacity: 1;
 
@@ -2977,11 +2992,7 @@ color-mix(in srgb, var(--default-color), transparent 50%);
 
 --------------------------------------------------------------*/
 
-.starter-section {
 
-/* Add your styles here */
-
-}
 
 .bolg-main {
 
@@ -3027,9 +3038,7 @@ h2 {
 
 #details .icon-box p{float:left; color:rgba(255, 255, 255, 0.72)}
 
-
-
-.raintail h2{ color: #FFC91F!important;}
+.raintail h2{ color: #F59E0B!important;}
 
 .raintail .icon-box h3{
 
@@ -3040,42 +3049,6 @@ h2 {
 .raintail .container .icon-box .cion p{float:left; color:var(--accent-color)}
 
 .raintail .icon-box p{float:left; color:#fff!important}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .details .icon-box {
 
@@ -3155,7 +3128,7 @@ h2 {
 
 .details.raintail .icon-box .cion {
 
-	background-color: #FFC91F;
+	background-color: #F59E0B;
 
 }
 
@@ -3173,13 +3146,11 @@ h2 {
 
 }
 
-
-
 .features-redesigned .container{ position:relative}
 
 .swiper-wrapper-inner {
 
-	border:2px solid #ccc;
+	border:2px solid #E5E7EB;
 
 	border-radius:12px;
 
@@ -3215,13 +3186,13 @@ h2 {
 
 #testimonials h2 span {
 
-	color:#FFC91F
+	color:#F59E0B
 
 }
 
 #faq span {
 
-	color:#FFC91F
+	color:#F59E0B
 
 }
 
@@ -3335,8 +3306,6 @@ img {
 
 #details .icon-box h3, p {
 
- 
-
  text-align: left;
 
 }
@@ -3361,7 +3330,7 @@ position: static;
 
  margin-bottom: 0px;
 
- background: #FFC91F;
+ background: #F59E0B;
 
  padding-bottom: 60px;
 
@@ -3401,8 +3370,6 @@ position:relative;    right: -30px;
 
 }
 
-
-
 .how-it-works-v2 .section-subtitle{display: block;width: 100%;}
 
  .details .icon-box {
@@ -3429,11 +3396,7 @@ font-weight: 700;
 
 }
 
-
-
  .raintail {
-
- 
 
  padding-top: 50px;
 
@@ -3647,9 +3610,7 @@ margin-bottom:0px;
 
 }
 
-#contactUs {
 
-}
 
 .card-body a {
 
@@ -3721,7 +3682,6 @@ margin-bottom:0px;
 
 }
 
-
 .cardLink {
 
 	color: var(--accent-color);
@@ -3777,32 +3737,22 @@ h4 {
 }
 
 .store-button {
-
 	display: inline-flex;
-
 	align-items: center;
-
-	padding: 12px 20px;
-
+	height: 52px;
+	box-sizing: border-box;
+	padding: 0 20px;
 	border-radius: 10px;
-
 	background-color: var(--accent-color);
-
 	color: var(--contrast-color);
-
 	text-decoration: none;
-
 	transition: all 0.3s ease;
-
 	border: 2px solid rgba(255, 255, 255, 0.08);
-
 	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-
 }
 
 .store-button:hover {
-
-	transform: translateY(-4px);
+	transform: translateY(-2px);
 
 	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
 
@@ -3864,9 +3814,7 @@ h4 {
 
 }
 
-#download-app .store-button:hover {
 
-}
 
 .store-buttons a:hover {
 
@@ -3922,8 +3870,6 @@ h4 {
 
 --------------------------------------------------------------*/
 
-
-
 /* This is the main container for the section */
 
 .stats-section-modern {
@@ -3939,7 +3885,6 @@ h4 {
 }
 
 /* This styles each individual card */
-
 
 .stats-card-modern {
 
@@ -3965,7 +3910,6 @@ h4 {
 
 /* Adds a hover effect to lift the card and highlight it */
 
-
 .stats-card-modern:hover {
 
 	transform: translateY(-5px);
@@ -3977,7 +3921,6 @@ h4 {
 }
 
 /* This is the circle behind the icon */
-
 
 .stats-icon-modern {
 
@@ -4067,7 +4010,7 @@ h4 {
 
 :root {
 
- --primary-color: #0D6EFD; /* Professional Blue */
+ --primary-color: #F59E0B; /* Professional Blue */
 
  --primary-color-dark: #0A58CA;
 
@@ -4087,7 +4030,7 @@ h4 {
 
 .how-it-works-modern {
 
-	background-color:#FFC91F; /* Use a neutral light background */
+	background-color:#F59E0B; /* Use a neutral light background */
 
 	padding: 100px 0;
 
@@ -4137,7 +4080,7 @@ h4 {
 
 	border: 1px solid var(--border-color);
 
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 8px 25px rgba(17, 24, 39, 0.05);
 
 	text-align: center;
 
@@ -4251,23 +4194,11 @@ h4 {
 
 }
 
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 
 # Redesigned Stats Section
 
 --------------------------------------------------------------*/
-
-
 
 /* A utility class for a light background, common in templates */
 
@@ -4276,8 +4207,6 @@ h4 {
 	background-color: #111111;
 
 }
-
-
 
 .stats-redesigned {
 
@@ -4290,8 +4219,6 @@ h4 {
 	background: #0b0b0b;
 
 }
-
-
 
 /* The main container for each statistic */
 
@@ -4315,8 +4242,6 @@ h4 {
 
 }
 
-
-
 /* Hover effect to make the cards feel interactive */
 
 .stats-redesigned .stats-item:hover {
@@ -4328,8 +4253,6 @@ h4 {
 	border-color: rgba(255, 180, 0, 0.45);
 
 }
-
-
 
 /* The circular background for the Bootstrap Icon */
 
@@ -4357,8 +4280,6 @@ h4 {
 
 }
 
-
-
 /* The Bootstrap Icon itself */
 
 .stats-redesigned .stats-icon-wrapper i {
@@ -4370,8 +4291,6 @@ h4 {
 	line-height: 0; /* Helps with vertical alignment */
 
 }
-
-
 
 /* The text content container */
 
@@ -4387,8 +4306,6 @@ h4 {
 
 }
 
-
-
 .stats-redesigned .stats-content p {
 
 	padding: 0;
@@ -4403,27 +4320,11 @@ h4 {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 
 # Redesigned "How It Works" Section V2
 
 --------------------------------------------------------------*/
-
-
 
 /* A utility class for a light background */
 
@@ -4432,8 +4333,6 @@ h4 {
 	background-color: #111111;
 
 }
-
-
 
 .how-it-works-v2 {
 
@@ -4444,8 +4343,6 @@ h4 {
 
 }
 
-
-
 /* Section Header Styling */
 
 .how-it-works-v2 .section-header {
@@ -4453,8 +4350,6 @@ h4 {
   margin-bottom: 50px;
 
 }
-
-
 
 .how-it-works-v2 .section-subtitle {
 
@@ -4478,8 +4373,6 @@ h4 {
 
 }
 
-
-
 .how-it-works-v2 .section-title {
 
 	color: #ffffff;
@@ -4489,8 +4382,6 @@ h4 {
   margin-top: 15px;
 
 }
-
-
 
 /* Individual Step Card Styling */
 
@@ -4514,8 +4405,6 @@ h4 {
 
 }
 
-
-
 .how-it-works-v2 .step-card:hover {
 
   transform: translateY(-8px);
@@ -4523,8 +4412,6 @@ h4 {
 	box-shadow: 0 18px 38px rgba(0, 0, 0, 0.4);
 
 }
-
-
 
 /* Step Icon Styling */
 
@@ -4544,8 +4431,6 @@ h4 {
 
   margin: 0 auto 25px auto;
 
-
-
   /* Centering the icon inside the circle */
 
   display: flex;
@@ -4557,8 +4442,6 @@ h4 {
   line-height: 0;
 
 }
-
-
 
 .how-it-works-v2 .step-card h3 {
 
@@ -4572,8 +4455,6 @@ h4 {
 
 }
 
-
-
 .how-it-works-v2 .step-card p {
 
 	color: rgba(255, 255, 255, 0.72);
@@ -4581,8 +4462,6 @@ h4 {
   line-height: 1.6;
 
 }
-
-
 
 /* The connecting arrow, created with a pseudo-element */
 
@@ -4612,19 +4491,11 @@ h4 {
 
 }
 
-
-
-
-
-
-
 /*--------------------------------------------------------------
 
 # Redesigned Features/Details Section
 
 --------------------------------------------------------------*/
-
-
 
 /* A utility class for a light background */
 
@@ -4633,8 +4504,6 @@ h4 {
 	background-color: #111111;
 
 }
-
-
 
 .features-redesigned {
 
@@ -4650,8 +4519,6 @@ h4 {
 
 }
 
-
-
 /* Section Header Styling */
 
 .features-redesigned .section-header {
@@ -4659,8 +4526,6 @@ h4 {
   margin-bottom: 50px;
 
 }
-
-
 
 .features-redesigned .section-title {
 
@@ -4674,8 +4539,6 @@ h4 {
 
 }
 
-
-
 /* Responsive adjustment for the title on smaller screens */
 
 @media (max-width: 768px) {
@@ -4688,8 +4551,6 @@ h4 {
 
 }
 
-
-
 /* Container for the main image to add decorative elements if needed */
 
 .features-redesigned .features-img-container {
@@ -4697,8 +4558,6 @@ h4 {
   text-align: center; /* Center the image on mobile */
 
 }
-
-
 
 /* Ensure the image is responsive */
 
@@ -4709,8 +4568,6 @@ h4 {
   height: auto;
 
 }
-
-
 
 /* Individual Feature Card Styling */
 
@@ -4730,8 +4587,6 @@ h4 {
 
 }
 
-
-
 .features-redesigned .feature-card:hover {
 
   transform: translateY(-5px);
@@ -4739,8 +4594,6 @@ h4 {
 	box-shadow: 0 18px 32px rgba(0, 0, 0, 0.35);
 
 }
-
-
 
 /* Feature Icon Wrapper */
 
@@ -4756,8 +4609,6 @@ h4 {
 
   margin-bottom: 20px;
 
-  
-
   /* Flexbox for perfect icon centering */
 
   display: flex;
@@ -4768,9 +4619,6 @@ h4 {
 
 }
 
-
-
-
 .features-redesigned .feature-icon i {
 
 	color: var(--contrast-color);
@@ -4780,8 +4628,6 @@ h4 {
   line-height: 0;
 
 }
-
-
 
 .features-redesigned .feature-card h3 {
 
@@ -4795,8 +4641,6 @@ h4 {
 
 }
 
-
-
 .features-redesigned .feature-card p {
 
 	color: rgba(255, 255, 255, 0.72);
@@ -4808,16 +4652,6 @@ h4 {
   margin: 0;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
 
@@ -4845,8 +4679,6 @@ h4 {
 
 }
 
-
-
 /* The main "Glassmorphism" card */
 
 .cta-glass .cta-glass-card {
@@ -4866,8 +4698,6 @@ h4 {
 	backdrop-filter: blur(22px);
 
 }
-
-
 
 /* The Aurora Glow Effect */
 
@@ -4897,8 +4727,6 @@ h4 {
 
 }
 
-
-
 /* Move the glow with the mouse - JS would be needed for perfect tracking,
 
    but this CSS-only hover effect is still very impressive. */
@@ -4909,8 +4737,6 @@ h4 {
 
 }
 
-
-
 /* Content Styling */
 
 .cta-glass .cta-title {
@@ -4919,13 +4745,11 @@ h4 {
 
   font-weight: 700;
 
-  color: #ffffff; 
+  color: #ffffff;
 
   text-shadow: 0 1px 3px rgba(0,0,0,0.3);text-align:left;
 
 }
-
-
 
 .cta-glass .cta-text {
 
@@ -4936,8 +4760,6 @@ h4 {
   margin: 15px 0 30px 0;
 
 }
-
-
 
 /* Store Buttons Styling for this section */
 
@@ -4983,10 +4805,6 @@ h4 {
 
 }
 
-
-
-
-
 /* 3D Interactive Image Styling */
 
 .cta-glass .cta-image-glass {
@@ -5015,15 +4833,11 @@ h4 {
 
 }
 
-
-
 .cta-glass .cta-image-glass:hover img {
 
   transform: rotateY(-10deg) rotateX(5deg) scale(1.05);
 
 }
-
-
 
 /* Responsive Adjustments */
 
@@ -5073,8 +4887,6 @@ h4 {
 
 }
 
-
-
 @media (max-width: 768px) {
 
   .cta-glass .cta-title {
@@ -5090,8 +4902,6 @@ h4 {
   }
 
 }
-
-
 
 /* Responsive Adjustments */
 
@@ -5119,8 +4929,6 @@ h4 {
 
 }
 
-
-
 @media (max-width: 768px) {
 
   .cta-elegant .cta-title {
@@ -5136,8 +4944,6 @@ h4 {
   }
 
 }
-
-
 
 /* Responsive Adjustments */
 
@@ -5157,8 +4963,6 @@ h4 {
 
   }
 
-
-
   /* We need to add the image back into the flow for mobile */
 
   /* If you want the image on mobile, add it inside the HTML grid for mobile view only */
@@ -5172,8 +4976,6 @@ h4 {
   }
 
 }
-
-
 
 @media (max-width: 768px) {
 
@@ -5203,8 +5005,6 @@ h4 {
 
 /* Responsive Adjustments */
 
-
-
 /* On medium screens and below, hide the connecting arrow */
 
 @media (max-width: 991.98px) {
@@ -5231,8 +5031,6 @@ h4 {
 
   }
 
-  
-
   .stats-redesigned .stats-icon-wrapper {
 
     margin-right: 0;
@@ -5242,10 +5040,6 @@ h4 {
   }
 
 }
-
-
-
-
 
 /* Responsive Adjustments */
 
@@ -5305,38 +5099,6 @@ h4 {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 
 # Redesigned Contact Section
@@ -5349,15 +5111,11 @@ h4 {
 
 }
 
-
-
 .contact-v2 {
 
   padding: 60px 0;
 
 }
-
-
 
 /* Section Header Styling */
 
@@ -5366,8 +5124,6 @@ h4 {
   margin-bottom: 50px;
 
 }
-
-
 
 .contact-v2 .section-title {
 
@@ -5379,8 +5135,6 @@ h4 {
 
 }
 
-
-
 .contact-v2 .section-header p {
 
   color: #6c757d;
@@ -5390,8 +5144,6 @@ h4 {
   margin: 10px auto 0 auto;
 
 }
-
-
 
 /* Base Contact Card Style */
 
@@ -5413,19 +5165,15 @@ h4 {
 
 }
 
-
-
 .contact-v2 .contact-card:hover {
 
   transform: translateY(-8px);
 
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 
-  border-color: #FFC91F; /* Highlight with accent color on hover */
+  border-color: #F59E0B; /* Highlight with accent color on hover */
 
 }
-
-
 
 /* Contact Icon Container */
 
@@ -5437,13 +5185,11 @@ h4 {
 
   border-radius: 50%;
 
-  background-color: #FFC91F; /* Light blue background */
+  background-color: #F59E0B; /* Light blue background */
 
   margin: 0 auto 25px auto;
 
   transition: all 0.3s ease;
-
-
 
   /* Flexbox for perfect icon centering */
 
@@ -5455,15 +5201,11 @@ h4 {
 
 }
 
-
-
 .contact-v2 .contact-card:hover .contact-icon {
 
   background-color: #f1c22f; /* Full accent color on hover */
 
 }
-
-
 
 /* The Bootstrap Icon itself */
 
@@ -5477,15 +5219,11 @@ h4 {
 
 }
 
-
-
 .contact-v2 .contact-card:hover .contact-icon i {
 
   color: #ffffff; /* White icon on hover */
 
 }
-
-
 
 /* Text Content Styling */
 
@@ -5500,8 +5238,6 @@ h4 {
   margin-bottom: 10px;
 
 }
-
-
 
 .contact-v2 .contact-content p,
 
@@ -5519,17 +5255,13 @@ h4 {
 
 }
 
-
-
 .contact-v2 .contact-content a:hover {
 
-  color: #0d6efd;
+  color: #F59E0B;
 
   text-decoration: underline;
 
 }
-
-
 
 /* Special Styling for the QR Code Card */
 
@@ -5565,8 +5297,6 @@ h4 {
 
 }
 
-
-
 /* The QR card doesn't need the icon styling, so we remove it */
 
 .contact-v2 .contact-card-qr .contact-icon {
@@ -5575,45 +5305,1118 @@ h4 {
 
 }
 
+/* ==========================================================================
+   FOXRUN GLOBAL LUXURY COLOR PALETTE & DESIGN SYSTEM
+   Strict 7-Color System Enforcement:
+   - Background: #F8FAFC
+   - Surface: #FFFFFF
+   - Primary: #111827
+   - Secondary: #64748B
+   - Accent: #F59E0B
+   - Border: #E5E7EB
+   - Dark Section: #0F172A
+   ========================================================================== */
 
+:root {
+  --font-heading: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
+  --default-font: var(--font-body);
+  --heading-font: var(--font-heading);
+  --nav-font: var(--font-body);
 
+  --bg-main: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-details-match: #FFF8DF;
+  --bg-dark: #0F172A;
+  --bg-footer: #0B0F19;
+  
+  --primary: #111827;
+  --secondary: #64748B;
+  --accent: #F59E0B;
+  --accent-hover: #D97706;
+  --border-subtle: #E5E7EB;
 
+  --background-color: var(--bg-main);
+  --default-color: var(--primary);
+  --heading-color: var(--primary);
+  --accent-color: var(--accent);
+  --surface-color: var(--bg-surface);
+  --contrast-color: #FFFFFF;
 
+  --shadow-sm: 0 10px 30px rgba(17, 24, 39, 0.06);
+  --shadow-md: 0 20px 60px rgba(17, 24, 39, 0.08);
+  --shadow-hover: 0 25px 65px -10px rgba(17, 24, 39, 0.14);
+  --shadow-btn: 0 12px 28px -4px rgba(245, 158, 11, 0.35);
 
+  --radius-card: 24px;
+  --radius-btn: 9999px;
+  --radius-full: 9999px;
 
+  --transition-smooth: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
 
+/* Global Reset & Utility Overrides */
+body {
+  font-family: var(--font-body) !important;
+  background-color: var(--bg-main) !important;
+  color: var(--primary) !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  letter-spacing: -0.01em !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+h1 {
+  font-family: var(--font-heading) !important;
+  font-size: 64px !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--primary) !important;
+}
 
+h2, .section-title {
+  font-family: var(--font-heading) !important;
+  font-size: 48px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--primary) !important;
+}
 
+h3 {
+  font-family: var(--font-heading) !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: var(--primary) !important;
+}
 
+h4, h5, h6, .sitename {
+  font-family: var(--font-heading) !important;
+  color: var(--primary);
+  letter-spacing: -0.02em !important;
+}
 
+@media (max-width: 992px) {
+  h1 { font-size: 48px !important; }
+  h2, .section-title { font-size: 36px !important; }
+  h3 { font-size: 24px !important; }
+}
 
+@media (max-width: 768px) {
+  h1 { font-size: 40px !important; }
+  h2, .section-title { font-size: 30px !important; }
+  h3 { font-size: 22px !important; }
+  body { font-size: 16px !important; }
+}
 
+/* Container Alignment */
+.container, .container-xl, .container-lg {
+  max-width: 1440px !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
 
+/* Section Spacing Scale */
+section {
+  padding: 80px 0 !important;
+}
 
+@media (max-width: 992px) {
+  section {
+    padding: 60px 0 !important;
+  }
+}
 
+@media (max-width: 768px) {
+  section {
+    padding: 44px 0 !important;
+  }
+}
 
+/* 1. Header & Glass Navigation */
+.header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 76px !important;
+  z-index: 1000 !important;
+  background: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+  padding: 16px 0 !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: var(--transition-smooth) !important;
+}
 
+.header::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 50% !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%) !important;
+  pointer-events: none !important;
+}
 
+.header.scrolled, body.scrolled .header {
+  height: 66px !important;
+  padding: 12px 0 !important;
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(28px) !important;
+  -webkit-backdrop-filter: blur(28px) !important;
+  box-shadow: var(--shadow-md) !important;
+}
 
+.header .sitename {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: var(--primary) !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.header .sitename img {
+  max-height: 38px;
+  width: auto;
+  transition: transform 250ms ease;
+}
 
+.header .logo:hover img {
+  transform: scale(1.03);
+}
 
+.navmenu ul {
+  gap: 16px !important;
+}
 
+.navmenu a {
+  position: relative !important;
+  font-family: var(--font-body) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: var(--primary) !important;
+  padding: 8px 16px !important;
+  transition: color 250ms ease !important;
+  text-decoration: none !important;
+}
 
+.navmenu a::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 2px !important;
+  background: var(--accent) !important;
+  transition: width 250ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  border-radius: 2px !important;
+}
 
+.navmenu a:hover::after, .navmenu a.active::after {
+  width: 100% !important;
+}
 
+.navmenu a:hover, .navmenu a.active {
+  color: var(--primary) !important;
+  font-weight: 700 !important;
+  background: transparent !important;
+}
 
+/* 2. Hero Section */
+.hero-slider, .hero-section {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1376px !important;
+  margin: 108px auto 0 auto !important;
+  height: 640px !important;
+  overflow: hidden !important;
+  border-radius: 28px !important;
+  padding-top: 0 !important;
+  background: #090D16 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 30px 80px rgba(17, 24, 39, 0.12), inset 0 0 100px rgba(0, 0, 0, 0.6) !important;
+  animation: heroFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
 
+.hero-slider .slide {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #090D16 !important;
+  border-radius: 28px !important;
+  opacity: 0;
+  filter: contrast(1.05) brightness(1.02) drop-shadow(0 20px 40px rgba(17, 24, 39, 0.4)) !important;
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  animation: heroFloat 6s ease-in-out infinite !important;
+}
 
+.hero-slider .slide:first-child {
+  opacity: 1;
+}
 
+@media (max-width: 992px) {
+  .hero-slider, .hero-section {
+    margin-top: 85px !important;
+    height: 480px !important;
+  }
+}
 
+@media (max-width: 768px) {
+  .hero-slider, .hero-section {
+    margin-top: 75px !important;
+    height: 350px !important;
+  }
+}
 
+@media (max-width: 480px) {
+  .hero-slider, .hero-section {
+    margin-top: 70px !important;
+    height: 270px !important;
+  }
+}
 
+/* 3. How It Works Section ("Book Your Ride in 3 Easy Steps" 100% High Contrast) */
+.how-it-works-v2, 
+section#how-it-works-v2, 
+#how-it-works-v2.section-bg {
+  position: relative !important;
+  background-color: #0F172A !important;
+  padding: 80px 0 !important;
+  overflow: hidden !important;
+}
 
+.how-it-works-v2 .section-subtitle {
+  font-family: "Sora", sans-serif !important;
+  color: #F59E0B !important;
+  background: rgba(245, 158, 11, 0.12) !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em !important;
+  margin: 0 auto 16px auto !important;
+  padding: 8px 24px !important;
+  border-radius: 9999px !important;
+  display: inline-block !important;
+}
 
+.how-it-works-v2 .section-title,
+#how-it-works-v2 .section-title,
+.how-it-works-v2 h2,
+#how-it-works-v2 h2 {
+  font-family: "Sora", sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  color: #FFFFFF !important; /* PURE CRISP WHITE FOR MAXIMUM CONTRAST */
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
+  margin-bottom: 24px !important;
+  text-align: center !important;
+}
 
+@media (max-width: 768px) {
+  .how-it-works-v2 .section-title,
+  #how-it-works-v2 .section-title {
+    font-size: 30px !important;
+  }
+}
 
+.how-it-works-v2 .step-card {
+  background: #FFFFFF !important;
+  padding: 36px 30px !important;
+  border-radius: 24px !important;
+  border: 1px solid #E5E7EB !important;
+  box-shadow: var(--shadow-md) !important;
+  text-align: center !important;
+  transition: var(--transition-smooth) !important;
+  height: 100% !important;
+}
 
+.how-it-works-v2 .step-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: #F59E0B !important;
+  box-shadow: var(--shadow-hover) !important;
+}
 
+.how-it-works-v2 .step-icon {
+  width: 72px !important;
+  height: 72px !important;
+  border-radius: 20px !important;
+  background: rgba(245, 158, 11, 0.12) !important;
+  color: #D97706 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 28px !important;
+  margin: 0 auto 24px auto !important;
+}
+
+.how-it-works-v2 .step-card h3 {
+  font-family: "Sora", sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  margin-bottom: 12px !important;
+}
+
+.how-it-works-v2 .step-card p {
+  font-family: "Inter", sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #64748B !important;
+  margin: 0 !important;
+}
+
+/* 4. Features Section (Preserving .imagesbog position at left: -75px) */
+.features-redesigned {
+  background: #0F172A !important;
+  padding: 100px 0 120px 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.features-redesigned .section-title {
+  color: #FFFFFF !important;
+  margin-bottom: 56px !important;
+}
+
+.imagesbog {
+  position: absolute !important;
+  left: -75px !important;
+  top: 20% !important;
+  width: 50% !important;
+  z-index: 10 !important;
+}
+
+.imagesbog img {
+  max-width: 100% !important;
+  height: auto !important;
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.45)) !important;
+}
+
+@media (max-width: 991px) {
+  .imagesbog {
+    position: static !important;
+    width: 100% !important;
+    margin-bottom: 36px !important;
+    text-align: center !important;
+  }
+}
+
+.features-redesigned .feature-card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding: 32px !important;
+  border-radius: 24px !important;
+  height: 100% !important;
+  transition: var(--transition-smooth) !important;
+}
+
+.features-redesigned .feature-card:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-6px) !important;
+  border-color: #F59E0B !important;
+}
+
+.features-redesigned .feature-icon {
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 18px !important;
+  background: #F59E0B !important;
+  margin-bottom: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.features-redesigned .feature-icon i {
+  color: #111827 !important;
+  font-size: 26px !important;
+}
+
+.features-redesigned .feature-card h3 {
+  color: #FFFFFF !important;
+}
+
+.features-redesigned .feature-card p {
+  color: #94A3B8 !important;
+}
+
+/* 5. Details Section (Matching inone1.png background seamlessly) */
+#details,
+.details,
+section.details,
+.raintail {
+  background-color: #FFF8DF !important; /* Seamless match with inone1.png background */
+  padding: 90px 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+#details .section-title h2,
+.details .section-title h2,
+.raintail h2 {
+  font-family: "Sora", sans-serif !important;
+  font-size: 44px !important;
+  font-weight: 800 !important;
+  color: #111827 !important; /* Deep Dark Charcoal - 100% Crisp Visibility */
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 48px !important;
+  text-align: left !important;
+}
+
+#details .section-title h2 span,
+.details .section-title h2 span,
+.raintail h2 span {
+  color: #D97706 !important;
+}
+
+#details .icon-box,
+.details .icon-box,
+.raintail .icon-box {
+  background: #FFFFFF !important;
+  padding: 32px 28px !important;
+  border-radius: 24px !important;
+  border: 1px solid #E5E7EB !important;
+  margin-bottom: 20px !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: var(--transition-smooth) !important;
+  float: none !important;
+  width: 100% !important;
+}
+
+#details .icon-box:hover,
+.details .icon-box:hover,
+.raintail .icon-box:hover {
+  border-color: #F59E0B !important;
+  transform: translateX(6px) !important;
+  box-shadow: var(--shadow-hover) !important;
+}
+
+#details .icon-box h3,
+.details .icon-box h3,
+.raintail .icon-box h3 {
+  font-family: "Sora", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  margin-bottom: 8px !important;
+}
+
+#details .icon-box p,
+.details .icon-box p,
+.raintail .icon-box p {
+  font-family: "Inter", sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  color: #64748B !important;
+  margin: 0 !important;
+}
+
+#details .icon-box .cion,
+.details .icon-box .cion,
+.raintail .icon-box .cion {
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 18px !important;
+  background: #F59E0B !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 16px !important;
+}
+
+#details .icon-box .cion img,
+.details .icon-box .cion img,
+.raintail .icon-box .cion img {
+  width: 32px !important;
+  height: 32px !important;
+  object-fit: contain !important;
+  filter: brightness(0) !important;
+}
+
+.car-rightr {
+  position: absolute !important;
+  right: -60px !important;
+  top: 30% !important;
+  z-index: 99 !important;
+  width: 50% !important;
+}
+
+.car-rightr img {
+  max-width: 100% !important;
+  height: auto !important;
+  filter: drop-shadow(0 25px 45px rgba(17, 24, 39, 0.12)) !important;
+}
+
+@media (max-width: 991px) {
+  .car-rightr {
+    position: relative !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 40px !important;
+  }
+}
+
+/* 6. Testimonials Section (Clean 0-Overlap Bounded Layout & Light Off-White #F8FAFC) */
+.testimonials,
+#testimonials,
+section.testimonials {
+  background-color: #F8FAFC !important; /* Premium light canvas */
+  padding: 80px 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.testimonials h2,
+#testimonials h2 {
+  font-family: "Sora", sans-serif !important;
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  color: #111827 !important;
+  text-align: center !important;
+  margin-bottom: 48px !important;
+}
+
+.testimonials h2 span,
+#testimonials h2 span {
+  color: #F59E0B !important;
+}
+
+.testimonials .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
+.testimonials .col-lg-7,
+.testimonials .col-md-7 {
+  width: 58.33333333% !important;
+  max-width: 58.33333333% !important;
+  flex: 0 0 58.33333333% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.testimonials .col-lg-5,
+.testimonials .col-md-5,
+.testimonials .righttext {
+  width: 41.66666667% !important;
+  max-width: 41.66666667% !important;
+  flex: 0 0 41.66666667% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+@media (max-width: 991px) {
+  .testimonials .col-lg-7,
+  .testimonials .col-md-7,
+  .testimonials .col-lg-5,
+  .testimonials .col-md-5,
+  .testimonials .righttext {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin-bottom: 24px !important;
+  }
+}
+
+.testimonials .swiper {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+.testimonials .swiper-wrapper {
+  display: flex !important;
+  width: 100% !important;
+}
+
+.testimonials .swiper-slide {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* ==========================================================================
+   LIGHT LUXURY EDITORIAL DESIGN SYSTEM - UBER / RAPIDO / AIRBNB / APPLE TIER
+   ========================================================================== */
+
+/* 1. Global Page Body & Base Typography */
+body, .main {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-secondary) !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+/* Global Headings & Typography */
+h1, h2, h3, h4, h5, h6,
+.section-title, .cta-title, .section-header h2 {
+  font-family: "Sora", sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  letter-spacing: -0.02em !important;
+  text-shadow: none !important;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+.section-title span, .section-header h2 span {
+  color: var(--accent) !important;
+  text-shadow: none !important;
+}
+
+p, span, li, .section-subtitle, .cta-text {
+  font-family: "Inter", sans-serif !important;
+  color: var(--text-secondary) !important;
+  line-height: 1.7 !important;
+}
+
+.section-subtitle {
+  color: var(--accent) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+}
+
+/* 2. Unified Navigation Bar */
+.header {
+  background: rgba(255, 253, 252, 0.88) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: 0 8px 28px rgba(17, 24, 39, 0.06) !important;
+}
+
+.header.scrolled {
+  background: rgba(255, 253, 252, 0.96) !important;
+  box-shadow: 0 12px 32px rgba(17, 24, 39, 0.08) !important;
+}
+
+.header .sitename, .sitename {
+  color: var(--text-primary) !important;
+  font-family: "Sora", sans-serif !important;
+  font-weight: 800 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.sitename img {
+  margin-right: 8px !important;
+}
+
+.navmenu a {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  position: relative !important;
+  padding-bottom: 4px !important;
+  transition: color 0.25s ease !important;
+}
+
+.navmenu a::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 2px !important;
+  background: var(--accent) !important;
+  border-radius: 2px !important;
+  transition: width 0.25s ease !important;
+}
+
+.navmenu a:hover::after, .navmenu a.active::after {
+  width: 100% !important;
+}
+
+.navmenu a:hover, .navmenu a.active {
+  color: var(--accent) !important;
+}
+
+/* 3. Hero Section & Responsive 16:9 Slider */
+.hero, .hero-slider-wrapper {
+  background: linear-gradient(180deg, #FFFDFC 0%, #F6F1E3 100%) !important;
+  position: relative !important;
+  background-image: radial-gradient(circle at top right, var(--accent-soft), transparent 45%) !important;
+}
+
+.hero-slider {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin: 95px auto 40px auto !important;
+  padding-top: 0 !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  overflow: hidden !important;
+  border-radius: 26px !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow) !important;
+  background: var(--bg-surface) !important;
+}
+
+.hero-slider .slide,
+.hero-slider img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  border-radius: 26px !important;
+  background: #FFFDFC !important;
+  padding-top: 0 !important;
+}
+
+/* 4. Section Alternating Background System */
+/* Section 2: How It Works (#F6F1E3 / --bg-primary) */
+.how-it-works-v2, #how-it-works-v2 {
+  background: var(--bg-primary) !important;
+  padding: 80px 0 !important;
+}
+
+/* Section 3: Features / Best Experience (#FFFDFC / --bg-secondary) */
+.features-redesigned, #features-redesigned {
+  background: var(--bg-secondary) !important;
+  padding: 80px 0 !important;
+}
+
+/* Section 4: Book A Car Section (#F3EBDD / --bg-surface-soft + Subtle Amber Radial Glow) */
+.inone-middle, .book-a-car, section.book-car {
+  background: var(--bg-surface-soft) !important;
+  position: relative !important;
+  background-image: radial-gradient(circle at center, var(--accent-soft), transparent 50%) !important;
+  padding: 80px 0 !important;
+}
+
+/* Section 5: Testimonials (#FFFDFC / --bg-secondary) */
+.testimonials, section.testimonials {
+  background: var(--bg-secondary) !important;
+  padding: 80px 0 !important;
+}
+
+/* Section 6 / FAQ: (#F6F1E3 / --bg-primary) */
+.faq, section.faq, #faq {
+  background: var(--bg-primary) !important;
+  padding: 80px 0 !important;
+}
+
+/* CTA Glass Section (#FFFDFC / --bg-secondary + Subtle Glow) */
+#cta-glass, .cta-glass {
+  background: var(--bg-secondary) !important;
+  background-image: radial-gradient(circle at top right, var(--accent-soft), transparent 45%) !important;
+  padding: 80px 0 !important;
+}
+
+/* Contact Section (#F6F1E3 / --bg-primary) */
+.contact-v2, #contact, section.contact-v2 {
+  background: var(--bg-primary) !important;
+  padding: 80px 0 !important;
+}
+
+/* 5. Cards Across Website (Step, Feature, Service, Testimonial, FAQ, Contact, Info Cards) */
+.step-card,
+.feature-item,
+.service-card,
+.faq-item,
+.testimonial-item,
+.contact-card,
+.cta-glass-card,
+.contact-v2 .contact-card {
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 26px !important;
+  box-shadow: var(--shadow) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+.step-card:hover,
+.feature-item:hover,
+.service-card:hover,
+.faq-item:hover,
+.testimonial-item:hover,
+.contact-card:hover,
+.cta-glass-card:hover,
+.contact-v2 .contact-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: var(--shadow-hover) !important;
+  border-color: rgba(245, 158, 11, 0.35) !important;
+}
+
+/* 6. Unified Icon Chip System */
+.step-icon,
+.contact-icon,
+.feature-icon,
+.icon-chip,
+.contact-v2 .contact-icon {
+  background: var(--accent-soft) !important;
+  border-radius: 18px !important;
+  color: var(--accent) !important;
+  border: none !important;
+  width: 64px !important;
+  height: 64px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 26px !important;
+  box-shadow: none !important;
+  margin-bottom: 20px !important;
+}
+
+.step-icon i,
+.contact-icon i,
+.feature-icon i,
+.icon-chip i {
+  color: var(--accent) !important;
+}
+
+.step-card:hover .step-icon,
+.contact-card:hover .contact-icon {
+  background: var(--accent) !important;
+  color: #111827 !important;
+}
+
+.step-card:hover .step-icon i,
+.contact-card:hover .contact-icon i {
+  color: #111827 !important;
+}
+
+/* 7. Unified Premium Button System */
+.btn,
+.btn-primary,
+.btn-lg,
+.store-button,
+.store-buttons a,
+.how-it-works-v2 .btn-primary {
+  background: var(--accent) !important;
+  color: #111827 !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 14px 30px !important;
+  font-family: "Sora", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.22) !important;
+  transition: transform .25s ease, box-shadow .25s ease !important;
+  text-decoration: none !important;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-lg:hover,
+.store-button:hover,
+.store-buttons a:hover,
+.how-it-works-v2 .btn-primary:hover {
+  background: var(--accent) !important;
+  color: #111827 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 18px 40px rgba(245, 158, 11, 0.30) !important;
+}
+
+/* 8. Best Experience Section Image Framing */
+.imagesbog img,
+.features-redesigned img {
+  border-radius: 28px !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow) !important;
+  background: var(--bg-surface) !important;
+}
+
+/* 9. Testimonials Card System */
+.testimonial-item {
+  padding: 36px 32px !important;
+}
+
+.testimonial-item .stars {
+  color: var(--accent) !important;
+  font-size: 16px !important;
+  margin-bottom: 14px !important;
+}
+
+.testimonial-item p {
+  color: var(--text-secondary) !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+.testimonial-item h3 {
+  color: var(--text-primary) !important;
+  font-size: 18px !important;
+  margin-bottom: 4px !important;
+}
+
+.testimonial-item h4 {
+  color: var(--text-secondary) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.testimonials .righttext img {
+  border-radius: 26px !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+/* 10. FAQ Section Styling */
+.faq-item {
+  border-radius: 24px !important;
+}
+
+.faq-item h3,
+.faq-item .faq-question {
+  color: var(--text-primary) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+.faq-item p,
+.faq-item .faq-answer {
+  color: var(--text-secondary) !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+.faq-item .faq-toggle,
+.faq-item i {
+  color: var(--accent) !important;
+}
+
+/* 11. CTA Glass Card */
+.cta-glass-card {
+  padding: 50px 45px !important;
+  border-radius: 28px !important;
+}
+
+.cta-title {
+  color: var(--text-primary) !important;
+  font-size: 38px !important;
+  font-weight: 800 !important;
+}
+
+.cta-text {
+  color: var(--text-secondary) !important;
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+}
+
+/* 12. Contact Content */
+.contact-content h3 {
+  color: var(--text-primary) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+.contact-content p,
+.contact-content a {
+  color: var(--text-secondary) !important;
+  text-decoration: none !important;
+}
+
+.contact-content a:hover {
+  color: var(--accent) !important;
+}
+
+/* 13. Light Luxury Editorial Footer */
+.footer {
+  background: var(--bg-surface-soft) !important;
+  border-top: 1px solid var(--border) !important;
+  padding: 80px 0 40px 0 !important;
+  color: var(--text-secondary) !important;
+}
+
+.footer h4, .footer h3 {
+  color: var(--text-primary) !important;
+  font-family: "Sora", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin-bottom: 24px !important;
+}
+
+.footer p, .footer span {
+  color: var(--text-secondary) !important;
+}
+
+.footer a {
+  color: var(--text-secondary) !important;
+  transition: color 0.25s ease !important;
+  text-decoration: none !important;
+}
+
+.footer a:hover {
+  color: var(--accent) !important;
+}
+
+.footer .copyright {
+  border-top: 1px solid var(--border) !important;
+  padding-top: 32px !important;
+  font-size: 14px !important;
+  color: var(--text-secondary) !important;
+}
+
+.social-links a {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: var(--accent-soft) !important;
+  border: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--accent) !important;
+  margin-right: 10px !important;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease !important;
+}
+
+.social-links a:hover {
+  background: var(--accent) !important;
+  color: #111827 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+  .hero-slider {
+    margin-top: 85px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slider {
+    margin-top: 75px !important;
+    border-radius: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    margin-top: 65px !important;
+    border-radius: 12px !important;
+  }
+}
